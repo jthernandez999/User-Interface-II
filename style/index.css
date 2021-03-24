@@ -54,26 +54,43 @@ body {
     
 }
 
-h1{
-    font-size: 36px;
-    margin:1%;
-    height:20px;
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content: flex-start;
-    text-align:left;
+
+.bg-img {
+    background-image: url("https://www.friendsofeurope.org/wp/wp-content/uploads/2019/06/bigstock-Planet-Earth-From-Space-Beaut-298703191-e1560939905471.jpg");
+    min-height: 380px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+    margin-top:33px;
+}
+.container1 {
+    position:absolute;
+    width:45%;
+    height:100%;
+    padding:12px;
+    
+}
+.myname {
+    height:160px;
+
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color:white;
+    display:inline-block;
+    align-items:center;
+
+    font-family:'Canela Web', "Lucida Console", "Courier New", monospace;
+    background-color:white;
+    color:black;
     padding:45px;
     letter-spacing: 1px;
     font-size: 60px;
     border: .5px solid rgb(255, 251, 251);
-    height:100px;
-    width: 25%;
-    text-align:left;
+    height:80px;
+    width: 100%;
+    margin-bottom: 9%;
+    
 }
 
 h2 {
@@ -82,29 +99,32 @@ h2 {
   }
   
 .nav_bar {
+    height:80px;
+    overflow:hidden;
+    display:flex;
+    flex-direction: row;
     font-size:28px;
-    border: 2px solid black;
-    margin: 1%;
+    
     padding: 2%;
-    width: 100%;
+    width: 66%;
     text-align:left;
-    background-color:black;
-    opacity:75%;
-  
+    background-color:#333;
+    opacity:75%; 
 }
 
 .nav_bar a {
-    color: white;
-    border: 5px;
-    margin: 1%;
-    padding:4px;
-    width:40px;
+    float:left;
+    
+    height:30px;
+    width: 33%;
     background-color:black;
-    border-top:2px solid #777777;
-    border-right:2px solid #333333;
-    border-bottom:2px solid#444444;
-    border-left:2px solid #777777;
+    float:left;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    padding:14px 22px;
     text-decoration:none;
+    font-size: 22px;
+    opacity:85%;
 }
 .nav_bar a:hover{
     background-color:white;
@@ -119,57 +139,24 @@ h2 {
     height:200px;
     font-size:30px;
     text-align: center;
-    background-color:rgb(195, 203, 202);
+    
+  
     padding: 60px;
     margin: 10px;
   }
   
   
-  .container .image {
-    height: 50px; 
-    width:100%;
-    margin: 20px;
-    border: 1px solid rgb(148, 155, 155);
-    background: rgb(191, 191, 191);
-    color: white;
-  }
-  
-
-  .container{
-    background-color:black;
-    opacity:75%;
-    padding:50px;
-    margin:auto;
-    width:100%;
-  }
- #toprow {
-    padding:50px;
-    color:white;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    flex-wrap: nowrap;
-}
-
-#bottomrow{
-    padding:50px;
-    color:white;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-}
-
 
 
   .content_2 { 
-    border: 2px solid rgb(200, 200, 200);
-    margin: 1%;
+    border: 2px solid rgb(201, 199, 199);
+    margin-top:33px;
     width: 100%;
     display:flex;
     flex-direction: row-reverse;
     flex-wrap:nowrap;
     justify-content:space-evenly;
-    background-color:black;
+    background-color:white;
     opacity:75%;
   }
 
@@ -183,14 +170,15 @@ h2 {
 }
 
 .content_2_box {
-    padding:75px;
+    padding:15px;
     border: 2px solid rgb(250, 255, 254);
     display: flex;
     flex-flow:row wrap;
     justify-content:space-evenly;
     vertical-align: top;
     margin: 1%;
-    width: 48%;
+    width: 69%;
+    margin:68px;
     min-width: 250px;
 }
 .content_2_box .text_content{
@@ -200,27 +188,93 @@ h2 {
     justify-content:flex-start;
     width:6%;
 }
+
+
+
+
+
+
+
+
+  .container2 .image {
+    height: 50px; 
+    width:100%;
+    margin: 20px;
+    border: 1px solid rgb(148, 155, 155);
+    background: rgb(191, 191, 191);
+    color: rgb(255, 255, 255);
+  }
+  
+
+  .container2{
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    opacity:75%;
+    padding:50px;
+    margin:auto;
+    width:100%;
+  }
+ .toprow {
+    padding:50px;
+    color:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+    align-content:center;
+}
+
+.bottomrow{
+    padding:50px;
+    color:white;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
 footer a{
     font-size:25px;
     display:inline-block;
     flex-direction:row;
     align-content:center;
-    
 }
-
-   
-    
-
 #topnav {
-    display:inline-block;
+    display:flex;
     flex-direction:row;
     justify-content:center;
     align-items:center;
 }
-#bottomrnav {
-    display:inline-block;
+.bottomnav {
+
     display:flex;
     flex-direction:row;
-    justify-content:center;  
+    justify-content:space-evenly;
+    align-items:center;
+
 }
 
+.bottomnav a {
+    color: white;
+    border: 5px;
+    margin: 1%;
+    padding:4px;
+    width:80px;
+    background-color:black;
+    border-top:2px solid #777777;
+    border-right:2px solid #333333;
+    border-bottom:2px solid#444444;
+    border-left:2px solid #777777;
+    text-decoration:none;
+    opacity:75%;
+}
+.bottomnav a:hover{
+    background-color:white;
+    color:black;
+}
